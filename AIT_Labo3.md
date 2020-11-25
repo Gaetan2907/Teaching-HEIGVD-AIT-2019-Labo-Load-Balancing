@@ -87,7 +87,7 @@ sequenceDiagram
 
 > 4. Provide a screenshot of the summary report from JMeter.
 
-![image-20201118160907282](/home/kurisukun/ProgTmp/Labos/Teaching-HEIGVD-AIT-2019-Labo-Load-Balancing/img/image-20201118160907282.png)
+![image-20201118160907282](./img/image-20201118160907282.png)
 
 
 
@@ -103,7 +103,7 @@ sequenceDiagram
 
 On voit que si un serveur est down, les requêtes sont redirigées vers l'autre serveur.
 
-![image-20201118161133861](/home/kurisukun/ProgTmp/Labos/Teaching-HEIGVD-AIT-2019-Labo-Load-Balancing/img/image-20201118161133861.png)
+![image-20201118161133861](./img/image-20201118161133861.png)
 
 ```mermaid
 sequenceDiagram
@@ -222,7 +222,7 @@ On remarque aussi que logiquement, si on ouvre une nouvelle navigation privée, 
 
 Nous remarquons que le client renvoie bien 2 cookies au serveur lors de ses requêtes suivantes:
 
-![image-20201122145010128](/home/kurisukun/ProgTmp/Labos/Teaching-HEIGVD-AIT-2019-Labo-Load-Balancing/img/image-20201122145010128.png)
+![image-20201122145010128](./img/image-20201122145010128.png)
 
 
 
@@ -265,7 +265,7 @@ sequenceDiagram
 
 Sur cette capture, les cookies sont conservés entre chaque requête ce qui a pour conséquence qu'on atteint toujours le même serveur.
 
-![image-20201122143857506](/home/kurisukun/ProgTmp/Labos/Teaching-HEIGVD-AIT-2019-Labo-Load-Balancing/img/image-20201122143857506.png)
+![image-20201122143857506](./img/image-20201122143857506.png)
 
 
 
@@ -276,7 +276,7 @@ Sur cette capture, les cookies sont conservés entre chaque requête ce qui a po
 
 On voit que le serveur réagit comme si un autre ordinateur s'était connecté et on obtient le fonctionnement attendu.
 
-![image-20201122144044224](/home/kurisukun/ProgTmp/Labos/Teaching-HEIGVD-AIT-2019-Labo-Load-Balancing/img/image-20201122144044224.png)
+![image-20201122144044224](./img/image-20201122144044224.png)
 
 
 
