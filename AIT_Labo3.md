@@ -301,18 +301,20 @@ On peut voir que c'est le serveur s2 qui a répondu.
 
 > 3. Refresh your browser and explain what is happening. Tell us if you stay on the same node or not. If yes, why? If no, why?
 
-
+Oui, nous restons sur la même node. Le principe du mode drain consiste a accepter uniquement les connexions ayant déjà été enregistrée grâce à la persistance. Toute nouvel connexion ne sera pas rediriger vers le node ou ce mode à été activé. 
 
 > 4. Open another browser and open `http://192.168.42.42`. What is happening?
 
-
+Si nous ouvrons un autre browser par exemple chrome puis firefox, les cookies ne seront pas les mêmes. Nous sommes donc rediriger vers s1 puisqu'il n'est pas en drain mode et accepte donc les nouvelles connexions. 
 
 > 5. Clear the cookies on the new browser and repeat these two steps multiple times. What is happening? Are you reaching the node in DRAIN mode?
 
-
+Si les cookies sont supprimés toutes les requêtes ouvriront de nouvels sessions, elles seront donc toutes redirigée vers s1 qui n'est pas en drain mode. 
 
 > 6. Reset the node in READY mode. Repeat the three previous steps and explain what is happening. Provide a screenshot of HAProxy's stats page.
 
-
+Une fois le state ready reactivé c'est à nouveau la politique du round robin avec sticky session qui s'applique. S'il il n'y a pas de session on est redirigé alternativement d'une node à l'autre. Si une session est enregistrée on sera redirigé vers la node concernée.  
 
 > 7. Finally, set the node in MAINT mode. Redo the three same steps and explain what is happening. Provide a screenshot of HAProxy's stats page.
+
+Le mode maint n'accepte plus aucune connexion. Toutes les requêtes seront donc redirigées vers l'autre node. 
