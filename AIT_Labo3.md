@@ -288,9 +288,14 @@ On voit que le serveur réagit comme si un autre ordinateur s'était connecté e
 
 > 1. Take a screenshot of the Step 5 and tell us which node is answering.
 >
-> 
->
+
+On peut voir que c'est le serveur s2 qui a répondu. 
+
+![image-20201125152258335](img/image-20201125152258335.png)
+
 > 2. Based on your previous answer, set the node in DRAIN mode. Take a screenshot of the HAProxy state page.
+
+![image-20201125152543145](img/image-20201125152543145.png)
 
 
 
