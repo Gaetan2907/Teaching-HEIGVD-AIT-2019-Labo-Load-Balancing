@@ -1,0 +1,235 @@
+2020-11-25 15:59:35,215 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2020-11-25 15:59:35,246 INFO o.a.j.JMeter: Loading user properties from: /opt/jmeter/bin/user.properties
+2020-11-25 15:59:35,247 INFO o.a.j.JMeter: Loading system properties from: /opt/jmeter/bin/system.properties
+2020-11-25 15:59:35,249 INFO o.a.j.JMeter: Copyright (c) 1998-2020 The Apache Software Foundation
+2020-11-25 15:59:35,249 INFO o.a.j.JMeter: Version 5.3
+2020-11-25 15:59:35,249 INFO o.a.j.JMeter: java.version=14.0.2
+2020-11-25 15:59:35,249 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2020-11-25 15:59:35,249 INFO o.a.j.JMeter: os.name=Linux
+2020-11-25 15:59:35,249 INFO o.a.j.JMeter: os.arch=amd64
+2020-11-25 15:59:35,250 INFO o.a.j.JMeter: os.version=5.8.16-2-MANJARO
+2020-11-25 15:59:35,250 INFO o.a.j.JMeter: file.encoding=UTF-8
+2020-11-25 15:59:35,250 INFO o.a.j.JMeter: java.awt.headless=null
+2020-11-25 15:59:35,250 INFO o.a.j.JMeter: Max memory     =1073741824
+2020-11-25 15:59:35,250 INFO o.a.j.JMeter: Available Processors =8
+2020-11-25 15:59:35,264 INFO o.a.j.JMeter: Default Locale=English (EN)
+2020-11-25 15:59:35,264 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2020-11-25 15:59:35,264 INFO o.a.j.JMeter: JMeterHome=/opt/jmeter
+2020-11-25 15:59:35,264 INFO o.a.j.JMeter: user.dir  =/home/kurisukun/ProgTmp/Labos/AIT_Labo3
+2020-11-25 15:59:35,264 INFO o.a.j.JMeter: PWD       =/home/kurisukun/ProgTmp/Labos/AIT_Labo3
+2020-11-25 15:59:35,265 INFO o.a.j.JMeter: IP: 192.168.0.18 Name: manjaro FullName: manjaro
+2020-11-25 15:59:35,546 INFO o.a.j.JMeter: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2020-11-25 15:59:35,918 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2020-11-25 15:59:59,441 INFO o.a.j.s.FileServer: Default base='/home/kurisukun/ProgTmp/Labos/AIT_Labo3'
+2020-11-25 15:59:59,451 INFO o.a.j.g.a.Load: Loading file: /home/kurisukun/ProgTmp/Labos/AIT_Labo3/tester.jmx
+2020-11-25 15:59:59,451 INFO o.a.j.s.FileServer: Set new base='/home/kurisukun/ProgTmp/Labos/AIT_Labo3'
+2020-11-25 15:59:59,613 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2020-11-25 15:59:59,632 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2020-11-25 15:59:59,634 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2020-11-25 15:59:59,636 INFO o.a.j.s.SaveService: Loading file: /home/kurisukun/ProgTmp/Labos/AIT_Labo3/tester.jmx
+2020-11-25 15:59:59,659 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2020-11-25 15:59:59,663 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-11-25 15:59:59,663 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-11-25 15:59:59,664 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-11-25 15:59:59,664 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-11-25 15:59:59,664 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2020-11-25 15:59:59,664 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2020-11-25 16:00:00,447 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2020-11-25 16:00:00,447 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2020-11-25 16:00:00,447 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2020-11-25 16:00:00,448 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2020-11-25 16:00:00,657 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2020-11-25 16:00:00,727 INFO o.a.j.s.FileServer: Set new base='/home/kurisukun/ProgTmp/Labos/AIT_Labo3'
+2020-11-25 16:00:03,832 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-11-25 16:00:03,834 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-11-25 16:00:03,834 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-11-25 16:00:03,836 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2020-11-25 16:00:03,836 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2020-11-25 16:00:03,885 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2020-11-25 16:00:03,901 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2020-11-25 16:00:03,901 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2020-11-25 16:00:03,901 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-11-25 16:00:03,901 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=1 delayedStart=false
+2020-11-25 16:00:03,916 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2020-11-25 16:00:03,938 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2020-11-25 16:00:03,938 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-11-25 16:00:03,938 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = manjaro
+2020-11-25 16:00:03,948 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2020-11-25 16:00:04,428 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2020-11-25 16:00:23,444 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2020-11-25 16:00:23,445 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2020-11-25 16:00:23,830 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2020-11-25 16:00:23,830 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2020-11-25 16:00:23,831 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2020-11-25 16:00:23,833 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2020-11-25 16:04:42,627 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-11-25 16:04:42,630 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-11-25 16:04:42,633 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2020-11-25 16:04:42,769 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2020-11-25 16:04:42,770 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2020-11-25 16:04:42,770 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-11-25 16:04:42,770 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=1 delayedStart=false
+2020-11-25 16:04:42,789 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2020-11-25 16:04:42,801 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2020-11-25 16:04:42,801 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-11-25 16:04:43,283 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2020-11-25 16:04:59,168 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2020-11-25 16:04:59,169 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2020-11-25 16:05:04,112 INFO o.a.j.g.a.Start: Shutting test down
+2020-11-25 16:05:04,141 INFO o.a.j.t.JMeterThread: Stopping: Thread Group 1-1
+2020-11-25 16:05:04,302 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2020-11-25 16:05:04,304 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2020-11-25 16:05:04,305 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2020-11-25 16:05:08,055 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-11-25 16:05:08,056 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-11-25 16:05:08,058 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2020-11-25 16:05:08,142 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2020-11-25 16:05:08,143 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2020-11-25 16:05:08,143 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-11-25 16:05:08,143 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=1 delayedStart=false
+2020-11-25 16:05:08,160 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2020-11-25 16:05:08,170 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2020-11-25 16:05:08,171 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-11-25 16:05:08,655 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2020-11-25 16:05:25,325 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2020-11-25 16:05:25,326 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2020-11-25 16:10:14,717 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2020-11-25 16:10:14,717 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2020-11-25 16:10:14,719 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2020-11-25 16:10:14,719 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2020-11-25 16:15:58,769 ERROR o.a.j.JMeter: Uncaught exception in thread Thread[AWT-EventQueue-0,6,main]
+java.lang.UnsupportedOperationException: TRANSLUCENT translucency is not supported.
+	at java.awt.Window.setOpacity(Window.java:3649) ~[?:?]
+	at com.github.weisj.darklaf.ui.tooltip.DarkTooltipUI$FadeInAnimator.paintNow(DarkTooltipUI.java:346) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator.paint(Animator.java:140) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator.onTick(Animator.java:176) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator.access$000(Animator.java:38) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator$1.lambda$run$0(Animator.java:130) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:316) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:391) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2020-11-25 16:15:59,962 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-11-25 16:15:59,964 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-11-25 16:15:59,967 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2020-11-25 16:16:00,111 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2020-11-25 16:16:00,112 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2020-11-25 16:16:00,112 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-11-25 16:16:00,112 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=1 delayedStart=false
+2020-11-25 16:16:00,127 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2020-11-25 16:16:00,140 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2020-11-25 16:16:00,140 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-11-25 16:16:00,628 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2020-11-25 16:16:16,874 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2020-11-25 16:16:16,875 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2020-11-25 16:16:26,030 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2020-11-25 16:16:26,031 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2020-11-25 16:16:26,031 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2020-11-25 16:16:26,031 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2020-11-25 16:16:52,741 ERROR o.a.j.JMeter: Uncaught exception in thread Thread[AWT-EventQueue-0,6,main]
+java.lang.UnsupportedOperationException: TRANSLUCENT translucency is not supported.
+	at java.awt.Window.setOpacity(Window.java:3649) ~[?:?]
+	at com.github.weisj.darklaf.ui.tooltip.DarkTooltipUI$FadeInAnimator.paintNow(DarkTooltipUI.java:346) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator.paint(Animator.java:140) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator.onTick(Animator.java:176) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator.access$000(Animator.java:38) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator$1.lambda$run$0(Animator.java:130) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:316) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:391) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2020-11-25 16:27:31,079 ERROR o.a.j.JMeter: Uncaught exception in thread Thread[AWT-EventQueue-0,6,main]
+java.lang.UnsupportedOperationException: TRANSLUCENT translucency is not supported.
+	at java.awt.Window.setOpacity(Window.java:3649) ~[?:?]
+	at com.github.weisj.darklaf.ui.tooltip.DarkTooltipUI$FadeInAnimator.paintNow(DarkTooltipUI.java:346) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator.paint(Animator.java:140) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator.onTick(Animator.java:176) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator.access$000(Animator.java:38) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator$1.lambda$run$0(Animator.java:130) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:316) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:391) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2020-11-25 16:27:31,749 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-11-25 16:27:31,750 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-11-25 16:27:31,751 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2020-11-25 16:27:31,797 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2020-11-25 16:27:31,797 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2020-11-25 16:27:31,797 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-11-25 16:27:31,797 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=1 delayedStart=false
+2020-11-25 16:27:31,806 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2020-11-25 16:27:31,816 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2020-11-25 16:27:31,817 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-11-25 16:27:32,308 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2020-11-25 16:37:11,467 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2020-11-25 16:37:11,467 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2020-11-25 16:37:12,479 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2020-11-25 16:37:12,479 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2020-11-25 16:37:12,481 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2020-11-25 16:37:12,481 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2020-11-25 16:38:34,900 ERROR o.a.j.g.a.Save: Could not backup file! Backup directory does not exist, is not a directory or could not be created ! </opt/jmeter/backups>
+2020-11-25 16:38:34,940 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-11-25 16:38:34,940 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-11-25 16:38:34,941 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2020-11-25 16:38:34,987 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2020-11-25 16:38:34,987 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2020-11-25 16:38:34,987 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-11-25 16:38:34,988 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=1 delayedStart=false
+2020-11-25 16:38:34,996 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2020-11-25 16:38:35,005 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2020-11-25 16:38:35,005 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-11-25 16:38:35,499 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2020-11-25 16:44:32,692 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2020-11-25 16:44:32,692 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2020-11-25 16:45:03,120 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2020-11-25 16:45:03,120 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2020-11-25 16:45:03,120 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2020-11-25 16:45:03,121 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2020-11-25 16:50:24,814 ERROR o.a.j.JMeter: Uncaught exception in thread Thread[AWT-EventQueue-0,6,main]
+java.lang.UnsupportedOperationException: TRANSLUCENT translucency is not supported.
+	at java.awt.Window.setOpacity(Window.java:3649) ~[?:?]
+	at com.github.weisj.darklaf.ui.tooltip.DarkTooltipUI$FadeInAnimator.paintNow(DarkTooltipUI.java:346) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator.paint(Animator.java:140) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator.onTick(Animator.java:176) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator.access$000(Animator.java:38) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at com.github.weisj.darklaf.graphics.Animator$1.lambda$run$0(Animator.java:130) ~[darklaf-core-2.1.1.jar:2.1.1]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:316) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:391) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
