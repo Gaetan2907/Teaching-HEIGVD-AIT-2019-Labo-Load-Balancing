@@ -318,3 +318,65 @@ Une fois le state ready reactivé c'est à nouveau la politique du round robin a
 > 7. Finally, set the node in MAINT mode. Redo the three same steps and explain what is happening. Provide a screenshot of HAProxy's stats page.
 
 Le mode maint n'accepte plus aucune connexion. Toutes les requêtes seront donc redirigées vers l'autre node. 
+
+### Task 4
+
+> 1.  Make sure a delay of 0 milliseconds is set on `s1`. Do a run to have a baseline to compare with in the next experiments.
+
+Après avoir fixé un délai de 0 millisecondes sur chacune des nodes nous lançons un test Jmeter afin d'avoir une mesure de comparaison pour les étapes suivantes. 
+
+![](img/image_2020-11-25_16-01-27.png)
+
+> 2. Set a delay of 250 milliseconds on `s1`. Relaunch a run with the
+>    JMeter script and explain what is happening.
+
+Nous avons set le délai avec la commande suivante : 
+
+```
+curl -H "Content-Type: application/json" -X POST -d '{"delay": 250}' http://192.168.42.11:3000/delay
+```
+
+Le test suivant nous montre que les requêtes sur s1 mettent effectivement plus de temps. 
+
+![](image/7adb8818-fd9c-4c62-8ff3-ad9482b9522d.png)
+
+> 3. Set a delay of 2500 milliseconds on `s1`. Same than previous step.
+
+Nous voyons que presque toutes les requêtes sont redirigées vers s2. 
+
+![](image/image_2020-11-25_16-18-31.png)
+
+> 4. In the two previous steps, are there any errors? Why?
+
+Avec le délai de 250ms sur s1, il n'y a pas d'erreur. 
+
+Avec le délai de 2500ms sur s1, il y a des erreurs. A cause du délai trop grand, HAProxy considère le serveur s1 comme étant down. C'est pour cette raison que toutes les requêtes sont redirigées vers s2
+
+![](image/image_2020-11-25_16-19-24.png)
+
+> 5. Update the HAProxy configuration to add a weight to your nodes. For
+>    that, add `weight [1-256]` where the value of weight is between the
+>    two values (inclusive). Set `s1` to 2 and `s2` to 1. Redo a run with a 250ms delay.
+
+Nous configurons `hoproxy.cgf` avec les instructions suivantes. 
+
+```
+server s1 ${WEBAPP_1_IP}:3000 weight 2 check cookie s1
+server s2 ${WEBAPP_2_IP}:3000 weight 1 check cookie s2
+```
+
+Nous voyons grâce au test que toutes les requêtes sont redirigées vers s2, ceci à cause du poids plus élevé.  
+
+> 6. Now, what happens when the cookies are cleared between each request and the delay is set to 250ms? We expect just one or two sentence to summarize your observations of the behavior with/without cookies.
+
+Avec les cookies : 
+
+Il n'y a pas des différences car à cause de la sticky sessions toutes les requêtes sont redirigées vers s1. 
+
+![](image/image_2020-11-25_16-38-24.png)
+
+Sans les cookies: 
+
+Une nouvelle sessions est créé à chaque requête. s1 reçoit deux fois plus de requête que s2 car son poids est double. Le temps de réponse est donc légèrement meilleur car s2 a un délai de 0 ms.  
+
+![](image/image_2020-11-25_16-45-22.png)
