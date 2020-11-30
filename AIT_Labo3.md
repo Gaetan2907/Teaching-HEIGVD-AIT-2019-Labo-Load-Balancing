@@ -409,11 +409,11 @@ Cette stratégies est intéressante car elle permet de changer dynamiquement cha
 
 First :
 
-Pour la stratégie on a changé deux configuration. La première évidemment est de changer le paramètre "balance" pour lui dire d'utiliser la stratégie "first". La deuxième à été l'ajout du paramètre "maxconn" sur chaque serveur. Ce paramètre sert à définir le nombre maximum de connexion simultané que le serveur accepte.
+Pour la stratégie on a changé deux configuration. La première évidemment est de changer le paramètre "balance" pour lui dire d'utiliser la stratégie "first". La deuxième a été l'ajout du paramètre "maxconn" sur chaque serveur. Ce paramètre sert à définir le nombre maximum de connexion simultané que le serveur accepte.
 
 ![Task5_first_conf_max1](img/Task5_first_conf_max1.png)
 
-Pour un premier test on a limité à une connexion par serveur. Comme on a deux utilisateur simultané on a logiquement 1000 connexion sur chaque serveur.
+Pour un premier test on a limité à une connexion par serveur. Comme on a deux utilisateurs simultané on a logiquement 1000 connexion sur chaque serveur.
 
 ![Task5_first_res_max1](img/Task5_first_res_max1.png)
 
@@ -425,7 +425,7 @@ Dans un deuxième test on a augmenté les connexions maximum du "s1" à 2. Puisq
 
 Random :
 
-Pour la configuration on a évidemment changé le paramètre balance pour appliquer la stratégie "random". Puisque les poids sont pris en compte on à commencé en configurant des poids qui devrait répartir les requêtes équitablement.
+Pour la configuration on a évidemment changé le paramètre balance pour appliquer la stratégie "random". Puisque les poids sont pris en compte on a commencé en configurant des poids qui devrait répartir les requêtes équitablement.
 
 ![Task5_random_conf](img/Task5_random_conf.png)
 
@@ -441,9 +441,9 @@ Comme deuxième test on a augmenté le poids du "s2" à 6. On devrait donc avoir
 
 > 3. Compare the two strategies and conclude which is the best for this lab (not necessary the best at all).
 
-Ces deux stratégie sont très différente. La "first" à pour but de concentrer les requêtes sur un serveur et d'utiliser le moins de serveur possible. Au contre la "random" à plutôt pour but d'utiliser tout les serveurs et de répartir les requêtes en fonction des poids qui leurs sont attribué.
+Ces deux stratégies sont très différentes. La "first" a pour but de concentrer les requêtes sur un serveur et d'utiliser le moins de serveur possible. Au contraire la "random" a plutôt pour but d'utiliser tout les serveurs et de répartir les requêtes en fonction des poids qui leurs sont attribué.
 
-Dans la situation de notre labo, puisqu'on a que deux utilisateur et des requêtes légère nous pensons que la stratégie "first" est la meilleur. On peut clairement voir dans le deuxième test avec la stratégie "first" que un serveur suffit pour s'occuper de toutes les requêtes. On pourrait donc imaginer utiliser la stratégie "first" et éteindre le deuxième serveur jusqu'à ce qu'il soit nécessaire.
+Dans la situation de notre labo, puisqu'on a que deux utilisateurs et des requêtes légères nous pensons que la stratégie "first" est la meilleur. On peut clairement voir dans le deuxième test avec la stratégie "first" que un serveur suffit pour s'occuper de toutes les requêtes. On pourrait donc imaginer utiliser la stratégie "first" et éteindre le deuxième serveur jusqu'à ce qu'il soit nécessaire.
 
 
 
