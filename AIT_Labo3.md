@@ -61,7 +61,7 @@ Lorsqu'une session est crée, le load balancer devrait rediriger le client vers 
 >    sequence of messages exchanged (1) between the browser and HAProxy
 >    and (2) between HAProxy and the nodes S1 and S2. Here is an example:
 >
->   ![Sequence diagram for part 1](/home/kurisukun/ProgTmp/Labos/Teaching-HEIGVD-AIT-2019-Labo-Load-Balancing/img/seq-diag-1.png)
+>   ![Sequence diagram for part 1](img/seq-diag-1.png)
 
 ```mermaid
 sequenceDiagram
