@@ -6,7 +6,7 @@
 
 
 
-### Task1
+### Task1: Install the tools
 
 
 
@@ -121,7 +121,7 @@ sequenceDiagram
     B->>D: ...
 ```
 
-### Task 2
+### Task 2: Sticky sessions
 
 
 
@@ -319,7 +319,7 @@ Une fois le state ready reactivé c'est à nouveau la politique du round robin a
 
 Le mode maint n'accepte plus aucune connexion. Toutes les requêtes seront donc redirigées vers l'autre node. 
 
-### Task 4
+### Task 4: Round robin in degraded mode
 
 > 1.  Make sure a delay of 0 milliseconds is set on `s1`. Do a run to have a baseline to compare with in the next experiments.
 
@@ -380,3 +380,72 @@ Sans les cookies:
 Une nouvelle sessions est créé à chaque requête. s1 reçoit deux fois plus de requête que s2 car son poids est double. Le temps de réponse est donc légèrement meilleur car s2 a un délai de 0 ms.  
 
 ![](image/image_2020-11-25_16-45-22.png)
+
+
+
+### Task 5: Balancing strategies
+
+
+
+> 1. Briefly explain the strategies you have chosen and why you have chosen them.
+
+La première stratégie qu'on a choisi est la dénommée "first". C'est une stratégie assez simple dans sa logique. On sélectionne le premier serveur avec des emplacements de connexion disponible et dirigeons toutes les requêtes vers celui-ci jusqu'à ce qu'il atteigne sont maximum de connexions. La sélection des serveurs se fait par leur id, du plus petit au plus grand. De par sa logique cette stratégie ignore les poids des serveurs.
+
+C'est une stratégie qui fonctionne mieux avec de longue session come en RDP ou IMAP. Elle est donc généralement moins efficace en HTTP mais peut quand même être utile.
+
+La raison pour avoir choisi c'est stratégie est l'exemple intéressant donné par HAProxy. En effet si au première abord cette stratégie paraît plutôt mauvaise elle peut être très utile dans la bonne situation. Durant les périodes avec très peu de requêtes ou d'utilisateurs, plutôt que de distribuer quelques requêtes sur chaque serveur, on peut utiliser la "first" stratégie pour concentrer les requêtes. Associé à d'autres programmes cela permet d'éteindre un grand nombre des serveurs non utilisés. Cela permet d'économiser de l'énergie et donc de l'argent.
+
+En résumé l'objectif de cette stratégie est d'utiliser le moins de serveur possible.
+
+
+
+La deuxième stratégie qu'on a choisi est la "random". Comme sont nom l'indique on va tirer un nombre aléatoire qui va être utilisé dans la fonction de hachage. Contrairement à la première, cette stratégie utilise et respecte les poids des serveurs.
+
+Cette stratégies est intéressante car elle permet de changer dynamiquement changer les poids des serveurs et ces changement sont immédiatement prit en compte. C'est aussi une stratégie qui support bien les fait d'ajouter ou d'enlever des serveurs. Si on est dans une situation où on va fréquemment changer/ajouter/enlever des serveurs c'est une bonne alternative à "roundrobin" ou "leastconn" qui support ça moins bien.
+
+
+
+> 2. Provide evidence that you have played with the two strategies (configuration done, screenshots, ...)
+
+First :
+
+Pour la stratégie on a changé deux configuration. La première évidemment est de changer le paramètre "balance" pour lui dire d'utiliser la stratégie "first". La deuxième à été l'ajout du paramètre "maxconn" sur chaque serveur. Ce paramètre sert à définir le nombre maximum de connexion simultané que le serveur accepte.
+
+![Task5_first_conf_max1](img/Task5_first_conf_max1.png)
+
+Pour un premier test on a limité à une connexion par serveur. Comme on a deux utilisateur simultané on a logiquement 1000 connexion sur chaque serveur.
+
+![Task5_first_res_max1](img/Task5_first_res_max1.png)
+
+Dans un deuxième test on a augmenté les connexions maximum du "s1" à 2. Puisque maintenant le serveur 1 peut s'occuper de tout les requêtes elles sont toutes redirigées vers lui.
+
+![Task5_first_res_max2](img/Task5_first_res_max2.png)
+
+
+
+Random :
+
+Pour la configuration on a évidemment changé le paramètre balance pour appliquer la stratégie "random". Puisque les poids sont pris en compte on à commencé en configurant des poids qui devrait répartir les requêtes équitablement.
+
+![Task5_random_conf](img/Task5_random_conf.png)
+
+Avec cette configuration on obtient des résultats équilibré entre les serveurs comme attendu.
+
+![Task5_random_res_w21](img/Task5_random_res_w21.png)
+
+Comme deuxième test on a augmenté le poids du "s2" à 6. On devrait donc avoir toute les requêtes vers le serveur 2 et c'est ce qu'on obtient.
+
+![Task5_random_res_w26](img/Task5_random_res_w26.png)
+
+
+
+> 3. Compare the two strategies and conclude which is the best for this lab (not necessary the best at all).
+
+Ces deux stratégie sont très différente. La "first" à pour but de concentrer les requêtes sur un serveur et d'utiliser le moins de serveur possible. Au contre la "random" à plutôt pour but d'utiliser tout les serveurs et de répartir les requêtes en fonction des poids qui leurs sont attribué.
+
+Dans la situation de notre labo, puisqu'on a que deux utilisateur et des requêtes légère nous pensons que la stratégie "first" est la meilleur. On peut clairement voir dans le deuxième test avec la stratégie "first" que un serveur suffit pour s'occuper de toutes les requêtes. On pourrait donc imaginer utiliser la stratégie "first" et éteindre le deuxième serveur jusqu'à ce qu'il soit nécessaire.
+
+
+
+
+
