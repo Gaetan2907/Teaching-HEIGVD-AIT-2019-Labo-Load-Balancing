@@ -1,8 +1,14 @@
-### AIT - Labo3 
+## AIT - Labo3 
 
 **Auteurs:** Barros Henriques Chris, Daubresse Gaëtan, Noël Eric
 
 
+
+
+
+### Introduction
+
+Le but de ce laboratoire a été d'approfondir notre compréhension de la notion de load balancing ainsi que de mettre en application certaines des notions vues en cours. De ce fait, nous avons regardé le comportement de HAProxy dans différentes situations ainsi que le résultat obtenu en effectuant des tests de charge avec JMeter. Nous avons pour cela commencé par modifier le comportement de la sticky session, du round robin, puis il nous a finalement été demandé d'apporter nous-mêmes deux modifications de notre choix à la configuration afin d'améliorer la stratégie du load balancing.
 
 
 
@@ -449,3 +455,6 @@ Dans la situation de notre labo, puisqu'on a que deux utilisateurs et des requê
 
 
 
+### Conclusion
+
+Nous avons beaucoup appris de ce labo car il a mis en lumière des aspects de base, néanmoins très importants, du load balancing tels que le round robin, la sticky session et diférentes stratégies de load balancing. Il nous a aussi permis d'utiliser un outil très utile qu'est JMeter afin de procéder à des tests de charges et aussi d'analyser comment la transmission des cookies et des paquets se fait. 
